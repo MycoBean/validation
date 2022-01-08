@@ -1,14 +1,8 @@
 #!/bin/bash
-echo -e "hello world" 
-echo -n "hello world"
-echo -e "\nhello \tworld"
-
-# print to screen
-
-: 'comment lines
-more comments'
-
-echo "test comment-free above"
-
-
-
+: 'Write a shell script named 0-current_working_directory that prints the absolute path name of the current working directory.
+Example:
+➜ ./0-current_working_directory
+/Users/devops/project/whereami
+➜
+'
+echo $PWD
