@@ -1,0 +1,22 @@
+#!/bin/bash
+# This file should be sourced
+
+: '
+Write a script that changes the working directory to the user home directory.
+
+You are not allowed to use any shell variables
+
+➜ pwd
+/tmp
+➜ echo $HOME
+/home/devops
+➜ source ./1-bring_me_home
+➜ pwd
+/home/devops
+
+'
+echo "Taking you home ..."
+
+cd ~
+
+echo "You are now home"

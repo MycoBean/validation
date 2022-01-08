@@ -1,0 +1,9 @@
+#!/bin/bash 
+# This file should be sourced
+
+: '
+Create a script to display the content of the current directory, 
+including hidden files (starting with a . character).
+'
+
+ll 

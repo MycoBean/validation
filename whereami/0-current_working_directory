@@ -5,4 +5,5 @@ Example:
 /Users/devops/project/whereami
 ➜
 '
-echo $PWD
+current_working_directory=$(pwd)
+echo $current_working_directory
