@@ -1,0 +1,21 @@
+#!/bin/bash 
+
+: '
+Write a script that creates an empty file named hello and that adds the following permissions to the file hello:
+
+    Read, write and execution permission to the owner,
+    Read and execution permissions to the group owner,
+    And only the read permission to other users.
+
+➜ ls -l
+total 8
+-rwxrw-r-- 1 devops devops 36 Sep 20 14:31 4-multiple_permissions
+➜ ./4-multiple_permissions 
+➜ ls -l
+total 8
+-rwxrw-r-- 1 devops devops 36 Sep 20 14:31 4-multiple_permissions
+-rwxr-xr-- 1 devops devops 23 Sep 20 14:25 hello
+'
+
+touch hello
+chmod 754 hello
