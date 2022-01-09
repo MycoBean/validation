@@ -1,0 +1,29 @@
+#!/bin/bash 
+
+: '
+Write a Bash script that displays DevOps 10 times.
+
+You must use the while loop (for and until are forbidden)
+
+➜ ./7-while_devops
+DevOps
+DevOps
+DevOps
+DevOps
+DevOps
+DevOps
+DevOps
+DevOps
+DevOps
+DevOps
+'
+
+i=0
+
+while [ $i -lt 10 ]
+do
+  echo "DevOps"
+  let i+=1
+done
+
+
